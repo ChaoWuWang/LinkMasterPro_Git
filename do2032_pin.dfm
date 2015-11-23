@@ -1,0 +1,36 @@
+object formDo2032: TformDo2032
+  Left = 763
+  Top = 0
+  VertScrollBar.Tracking = True
+  BorderStyle = bsDialog
+  Caption = 'EPS-2032'
+  ClientHeight = 522
+  ClientWidth = 124
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  OnClose = FormClose
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object DBoolean1: TDBoolean
+    Left = 16
+    Top = 8
+    Width = 41
+    Height = 33
+    DataBindings = <>
+    TabOrder = 0
+    ControlData = {
+      040002003D040000690300000700000002444FC0C0C000000352E30B918FCE11
+      9DE300AA004BB85101000000BC0260EA000005417269616C01000080C0000000
+      0000000000000000000000000000000100040001000000000000000000808080
+      000000000000000000024F6E034F6666000352E30B918FCE119DE300AA004BB8
+      5101000000BC02C0D4010005417269616C000352E30B918FCE119DE300AA004B
+      B85101000000BC02C0D4010005417269616C0000003200000000010000640000
+      0001000000000000000000}
+  end
+end

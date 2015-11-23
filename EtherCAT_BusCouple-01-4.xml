@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<EtherCATConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="EtherCATConfig.xsd" Version="1.3">
+  <Config>
+    <Master>
+      <Info>
+        <Name><![CDATA[Device 2 (EtherCAT)]]></Name>
+        <Destination>010105010000</Destination>
+        <Source>001060df2d82</Source>
+        <EtherType>a488</EtherType>
+      </Info>
+      <MailboxStates>
+        <StartAddr>150994944</StartAddr>
+        <Count>1</Count>
+      </MailboxStates>
+      <InitCmds>
+        <InitCmd>
+          <Transition>IP</Transition>
+          <BeforeSlave>1</BeforeSlave>
+          <Comment><![CDATA[read slave count]]></Comment>
+          <Requires>cycle</Requires>
+          <Cmd>7</Cmd>
+          <Adp>0</Adp>
+          <Ado>304</Ado>
+          <Data>0000</Data>
+          <Retries>0</Retries>
+        </InitCmd>
+        <InitCmd>
+          <Transition>IP</Transition>
+          <BeforeSlave>1</BeforeSlave>
+          <Comment><![CDATA[read slave count]]></Comment>
+          <Requires>cycle</Requires>
+          <Cmd>7</Cmd>
+          <Adp>0</Adp>
+          <Ado>304</Ado>
+          <Data>0000</Data>
+          <Retries>0</Retries>
+        </InitCmd>
+        <InitCmd>
+          <Transition>IP</Transition>
+          <BeforeSlave>1</BeforeSlave>
+          <Comment><![CDATA[enable ECAT IRQ]]></Comment>
+          <Requires>cycle</Requires>
+          <Cmd>8</Cmd>
+          <Adp>0</Adp>
+          <Ado>512</Ado>
+          <Data>0400</Data>
+          <Retries>3</Retries>
+        </InitCmd>
+        <InitCmd>
+          <Transition>IP</Transition>
+          <BeforeSlave>1</BeforeSlave>
+          <Comment><![CDATA[clear configured addresses]]></Comment>
+          <Requires>cycle</Requires>
+          <Cmd>8</Cmd>
+          <Adp>0</Adp>
+          <Ado>16</Ado>
+          <Data>0000</Data>
+          <Retries>3</Retries>
+        </InitCmd>
+        <InitCmd>
+          <Transition>IP</Transition>
+          <BeforeSlave>1</BeforeSlave>
+          <Comment><![CDATA[clear crc register]]></Comment>
+          <Requires>cycle</Requires>
+          <Cmd>8</Cmd>
+          <Adp>0</Adp>
+          <Ado>768</Ado>
+          <Data>0000000000000000</Data>
+          <Retries>3</Retries>
+        </InitCmd>
+        <InitCmd>
+          <Transition>IP</Transition>
+          <Transition>PI</Transition>
+          <Transition>BI</Transition>
+          <Transition>SI</Transition>
+          <Transition>OI</Transition>
+          <BeforeSlave>1</BeforeSlave>
+          <Comment><![CDATA[clear fmmu]]></Comment>
+          <Requires>cycle</Requires>
+          <Cmd>8</Cmd>
+          <Adp>0</Adp>
+          <Ado>1536</Ado>
+          <DataLength>256</DataLength>
+          <Retries>3</Retries>
+        </InitCmd>
+        <InitCmd>
+          <Transition>IP</Transition>
+          <BeforeSlave>1</BeforeSlave>
+          <Comment><![CDATA[clear sm]]></Comment>
+          <Requires>cycle</Requires>
+          <Cmd>8</Cmd>
+          <Adp>0</Adp>
+          <Ado>2048</Ado>
+          <DataLength>256</DataLength>
+          <Retries>3</Retries>
+        </InitCmd>
+        <InitCmd>
+          <Transition>IP</Transition>
+          <BeforeSlave>1</BeforeSlave>
+          <Comment><![CDATA[clear dc system time]]></Comment>
+          <Requires>cycle</Requires>
+          <Cmd>8</Cmd>
+          <Adp>0</Adp>
+          <Ado>2320</Ado>
+          <DataLength>32</DataLength>
+          <Retries>3</Retries>
+        </InitCmd>
+        <InitCmd>
+          <Transition>IP</Transition>
+          <BeforeSlave>1</BeforeSlave>
+          <Comment><![CDATA[clear dc cycle cfg]]></Comment>
+          <Requires>cycle</Requires>
+          <Cmd>8</Cmd>
+          <Adp>0</Adp>
+          <Ado>2433</Ado>
+          <Data>00</Data>
+          <Retries>3</Retries>
+        </InitCmd>
+        <InitCmd>
+          <Transition>IP</Transition>
+          <BeforeSlave>1</BeforeSlave>
+          <Comment><![CDATA[reset dc speed]]></Comment>
+          <Requires>cycle</Requires>
+          <Cmd>8</Cmd>
+          <Adp>0</Adp>
+          <Ado>2352</Ado>
+          <Data>0010</Data>
+          <Retries>3</Retries>
+        </InitCmd>
+        <InitCmd>
+          <Transition>IP</Transition>
+          <BeforeSlave>1</BeforeSlave>
+          <Comment><![CDATA[configure dc filter]]></Comment>
+          <Requires>cycle</Requires>
+          <Cmd>8</Cmd>
+          <Adp>0</Adp>
+          <Ado>2356</Ado>
+          <Data>000c</Data>
+          <Retries>3</Retries>
+        </InitCmd>
+        <InitCmd>
+          <Transition>IP</Transition>
+          <BeforeSlave>1</BeforeSlave>
+          <Comment><![CDATA[en/disable second physical address]]></Comment>
+          <Requires>cycle</Requires>
+          <Cmd>8</Cmd>
+          <Adp>0</Adp>
+          <Ado>259</Ado>
+          <Data>00</Data>
+          <Retries>3</Retries>
+        </InitCmd>
+      </InitCmds>
+    </Master>
+  </Config>
+</EtherCATConfig>

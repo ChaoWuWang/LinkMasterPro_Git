@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="LinkMasterPro.exe"/>
+    <OBJFILES value="LinkMasterPro.obj mainForm.obj slaveForm.obj infoForm.obj ai3216_pin.obj 
+      ai3032_pin.obj ao4008_pin.obj di1132_pin.obj do2032_pin.obj API_Class.obj 
+      ro2308_pin.obj rtd3504_pin.obj pollingThread.obj mo7002_pin.obj"/>
+    <RESFILES value="LinkMasterPro.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) mainForm.dfm slaveForm.dfm infoForm.dfm ai3216_pin.dfm 
+      ai3032_pin.dfm ao4008_pin.dfm di1132_pin.dfm do2032_pin.dfm ro2308_pin.dfm 
+      rtd3504_pin.dfm mo7002_pin.dfm"/>
+    <LIBFILES value="iphlpapi.lib AdMaster_bc.lib"/>
+    <LIBRARIES value="vclx.lib nmfast.lib indy.lib inet.lib xmlrtl.lib DAQBenchUI.lib dbrtl.lib 
+      vcldb.lib rtl.lib vcl.lib"/>
+    <SPARELIBS value="vcl.lib rtl.lib vcldb.lib dbrtl.lib DAQBenchUI.lib xmlrtl.lib inet.lib 
+      indy.lib nmfast.lib vclx.lib"/>
+    <PACKAGES value="vcl.bpi rtl.bpi dbrtl.bpi adortl.bpi vcldb.bpi vclx.bpi bdertl.bpi 
+      vcldbx.bpi ibxpress.bpi dsnap.bpi cds.bpi bdecds.bpi qrpt.bpi teeui.bpi 
+      teedb.bpi tee.bpi dss.bpi teeqr.bpi visualclx.bpi visualdbclx.bpi 
+      dsnapcrba.bpi dsnapcon.bpi bcbsmp.bpi vclie.bpi xmlrtl.bpi inet.bpi 
+      inetdbbde.bpi inetdbxpress.bpi inetdb.bpi nmfast.bpi webdsnap.bpi 
+      bcbie.bpi websnap.bpi soaprtl.bpi dclocx.bpi dbexpress.bpi dbxcds.bpi 
+      indy.bpi bcb2kaxserver.bpi DAQBenchUI.bpi"/>
+    <PATHCPP value=".;"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="_DEBUG"/>
+    <SYSDEFINES value="NO_STRICT"/>
+    <MAINSOURCE value="LinkMasterPro.cpp"/>
+    <INCLUDEPATH value="..\LinkMasterPro0205;$(BCB)\Imports;C:\Windows\system32;icon;&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;;D:\Test_code\LinkMasterPro;$(BCB)\include;$(BCB)\include\vcl"/>
+    <LIBPATH value="..\LinkMasterPro0205;$(BCB)\Projects\Lib;$(BCB)\Imports;C:\Windows\system32;icon;&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;;D:\Test_code\LinkMasterPro;$(BCB)\lib\obj;$(BCB)\lib"/>
+    <WARNINGS value="-w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-I..\LinkMasterPro0205 -I$(BCB)\Imports -IC:\Windows\system32 -Iicon 
+      -I&quot;C:\Program Files\Borland\CBuilder6\Projects&quot; 
+      -ID:\Test_code\LinkMasterPro -I$(BCB)\include -I$(BCB)\include\vcl 
+      -src_suffix cpp -D_DEBUG -boa"/>
+    <CFLAG1 value="-Od -H=&quot;C:\Program Files\Borland\CBuilder6\Lib\vcl60.csm&quot; -Hc -Vx -Ve -X- 
+      -r- -a8 -b- -k -y -v -vi- -c -tW -tWM"/>
+    <PFLAGS value="-$Y+ -$W -$O- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zi"/>
+    <LFLAGS value="-D&quot;&quot; -aa -Tpe -x -Gn -v"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="LinkMasterPro.res" FORMNAME="" UNITNAME="LinkMasterPro.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="LinkMasterPro.cpp" FORMNAME="" UNITNAME="LinkMasterPro" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="mainForm.cpp" FORMNAME="formMain" UNITNAME="mainForm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="slaveForm.cpp" FORMNAME="formSlave" UNITNAME="slaveForm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="infoForm.cpp" FORMNAME="formInfo" UNITNAME="infoForm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="iphlpapi.lib" FORMNAME="" UNITNAME="iphlpapi.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="AdMaster_bc.lib" FORMNAME="" UNITNAME="AdMaster_bc.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ai3216_pin.cpp" FORMNAME="formAi3216" UNITNAME="ai3216_pin" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ai3032_pin.cpp" FORMNAME="formAi3032" UNITNAME="ai3032_pin" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ao4008_pin.cpp" FORMNAME="formAo4008" UNITNAME="ao4008_pin" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="di1132_pin.cpp" FORMNAME="formDi1132" UNITNAME="di1132_pin" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="do2032_pin.cpp" FORMNAME="formDo2032" UNITNAME="do2032_pin" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="API_Class.cpp" FORMNAME="" UNITNAME="API_Class" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ro2308_pin.cpp" FORMNAME="formRo2308" UNITNAME="ro2308_pin" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="rtd3504_pin.cpp" FORMNAME="formRtd3504" UNITNAME="rtd3504_pin" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="pollingThread.cpp" FORMNAME="" UNITNAME="pollingThread" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="mo7002_pin.cpp" FORMNAME="formMo7002" UNITNAME="mo7002_pin" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=0
+AutoIncBuild=0
+MajorVer=1
+MinorVer=0
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1033
+CodePage=1252
+
+[Version Info Keys]
+CompanyName=
+FileDescription=
+FileVersion=1.0.0.0
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+Comments=
+
+[HistoryLists\hlIncludePath]
+Count=5
+Item0=..\LinkMasterPro0205;$(BCB)\Imports;C:\Windows\system32;icon;C:\Program Files\Borland\CBuilder6\Projects;D:\Test_code\LinkMasterPro;$(BCB)\include;$(BCB)\include\vcl
+Item1=$(BCB)\Imports;C:\Windows\system32;icon;C:\Program Files\Borland\CBuilder6\Projects;D:\Test_code\LinkMasterPro;$(BCB)\include;$(BCB)\include\vcl
+Item2=$(BCB)\Imports;C:\Windows\system32;icon;C:\Program Files\Borland\CBuilder6\Projects;D:\Test_code\LinkMasterPro;$(BCB)\include;$(BCB)\include\vcl;C:\Program Files\Borland\CBuilder6\Projects\Lib
+Item3=$(BCB)\Imports;C:\Windows\system32;icon;C:\Program Files\Borland\CBuilder6\Projects;D:\Test_code\LinkMasterPro;$(BCB)\include;$(BCB)\include\vcl;C:\Program Files\Borland\CBuilder6\Imports
+Item4=icon;C:\Program Files\Borland\CBuilder6\Projects;D:\Test_code\LinkMasterPro;$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=4
+Item0=..\LinkMasterPro0205;$(BCB)\Projects\Lib;$(BCB)\Imports;C:\Windows\system32;icon;C:\Program Files\Borland\CBuilder6\Projects;D:\Test_code\LinkMasterPro;$(BCB)\lib\obj;$(BCB)\lib
+Item1=$(BCB)\Projects\Lib;$(BCB)\Imports;C:\Windows\system32;icon;C:\Program Files\Borland\CBuilder6\Projects;D:\Test_code\LinkMasterPro;$(BCB)\lib\obj;$(BCB)\lib
+Item2=$(BCB)\Projects\Lib;$(BCB)\Imports;C:\Windows\system32;icon;C:\Program Files\Borland\CBuilder6\Projects;D:\Test_code\LinkMasterPro;$(BCB)\lib\obj;$(BCB)\lib;C:\Program Files\Borland\CBuilder6\Projects\Lib
+Item3=icon;C:\Program Files\Borland\CBuilder6\Projects;D:\Test_code\LinkMasterPro;$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=1
+Item0=_DEBUG
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=
+  </IDEOPTIONS>
+</PROJECT>

@@ -1,0 +1,35 @@
+object formRo2308: TformRo2308
+  Left = 450
+  Top = 235
+  BorderStyle = bsDialog
+  Caption = 'EPS-2308'
+  ClientHeight = 393
+  ClientWidth = 123
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  OnClose = FormClose
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object DBoolean1: TDBoolean
+    Left = 40
+    Top = 8
+    Width = 41
+    Height = 50
+    DataBindings = <>
+    TabOrder = 0
+    ControlData = {
+      040002003D0400002B0500000700000002524F80808000000352E30B918FCE11
+      9DE300AA004BB85101000000BC02905F010005417269616C0100008080000000
+      0000000000000000000000000000000100080001000000000000000000808080
+      000000000000000000024F6E034F6666000352E30B918FCE119DE300AA004BB8
+      5101000000BC02C0D4010005417269616C000352E30B918FCE119DE300AA004B
+      B85101000000BC02C0D4010005417269616C0000003200000000010000640000
+      0001000000000000000000}
+  end
+end

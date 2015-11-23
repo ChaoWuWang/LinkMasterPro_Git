@@ -1,0 +1,35 @@
+object formDi1132: TformDi1132
+  Left = 830
+  Top = 135
+  BorderStyle = bsDialog
+  Caption = 'EPS-1132'
+  ClientHeight = 723
+  ClientWidth = 125
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  OnClose = FormClose
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object DBoolean1: TDBoolean
+    Left = 16
+    Top = 8
+    Width = 41
+    Height = 33
+    DataBindings = <>
+    TabOrder = 0
+    ControlData = {
+      040002003D0400006903000007000000024449C0C0C000000352E30B918FCE11
+      9DE300AA004BB85101000000BC02AC07010005417269616C0100FF0000000000
+      0000000000000000000000000000000000030001000000000000000000808080
+      000000000000000000024F6E034F6666000352E30B918FCE119DE300AA004BB8
+      5101000000BC02C0D4010005417269616C000352E30B918FCE119DE300AA004B
+      B85101000000BC02C0D4010005417269616C0000003200000000010000640000
+      0001000000000000000000}
+  end
+end
